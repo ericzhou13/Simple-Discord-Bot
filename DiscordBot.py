@@ -6,10 +6,10 @@ import asyncio
 import random
 import glob
 import csv
-#TOKEN = NTU1NTc5NTk1NDk2MDk1NzY0.XIm90Q.RqAtC6PQByF3CO5AilnXdDTXotc
+#TOKEN = Put token here
 
 bot = commands.Bot(command_prefix="!")#makes the bot prefix
-token = "NTU1NTc5NTk1NDk2MDk1NzY0.XIm90Q.cjwzr2PJ-Yr6ENQTkoZPXZIRFdA"#
+token = "Put Token Here"#
 client = discord.Client()#creates and instance of the client that connects to discord
 
 
@@ -26,7 +26,7 @@ print(lines[1])
 
 @client.event
 async def on_message(message):
-	id = client.get_guild(910578140777185320)
+	id = client.get_guild("Server ID")
 	#channels = ["General"]
 	f1 = open("Discord\count.txt", "r")
 
@@ -54,4 +54,3 @@ client.run(token)
 
 
 
-#server id = 707013608495644682
